@@ -1,0 +1,1269 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+
+/* function */
+.f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb,.f-cbli li{zoom:1;}
+.f-ib{display:inline-block;*display:inline;*zoom:1;}
+.f-dn{display:none;}
+.f-db{display:block;}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.f-pr{position:relative;}
+.f-prz{position:relative;zoom:1;}
+.f-oh{overflow:hidden;}
+.f-ff0{font-family:arial,\5b8b\4f53;}
+.f-ff1{font-family:"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;}
+.f-fs1{font-size:12px;}
+.f-fs2{font-size:14px;}
+.f-fwn{font-weight:normal;}
+.f-fwb{font-weight:bold;}
+.f-tal{text-align:left;}
+.f-tac{text-align:center;}
+.f-tar{text-align:right;}
+.f-taj{text-align:justify;text-justify:inter-ideograph;}
+.f-vam,.f-vama *{vertical-align:middle;}
+.f-wsn{word-wrap:normal;white-space:nowrap;}
+.f-pre{overflow:hidden;text-align:left;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;}
+.f-wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}
+.f-ti{overflow:hidden;text-indent:-30000px;}
+.f-ti2{text-indent:2em;}
+.f-lhn{line-height:normal;}
+.f-tdu,.f-tdu:hover{text-decoration:underline;}
+.f-tdn,.f-tdn:hover{text-decoration:none;}
+.f-toe{overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}
+.f-csp{cursor:pointer;}
+.f-csd{cursor:default;}
+.f-csh{cursor:help;}
+.f-csm{cursor:move;}
+.f-usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+.f-fob{color:#eb862d;font-weight: bold;font-size: 33px;font-family: "Microsoft YaHei";}
+.f-fos{color:#eb862d;font-weight: normal;font-size: 13px;font-family: "Microsoft YaHei";}
+.f-fgs{color:#777;font-weight: bold;font-size: 13px;font-family: "Microsoft YaHei";}
+.f-fcg{color: #049f00;font-size: 14px;}
+.f-fco{color: #eb862d;font-size: 14px;}
+.f-fcb14{color: #eb862d;font-size: 14px;font-weight: bold;font-family: "Microsoft YaHei";}
+.f-fb6{color: #666;font-size: 14px;font-family: "Microsoft YaHei";font-weight: bold;}
+.f-fn14{color: #666;font-size: 14px;font-family: "Microsoft YaHei";}
+.f-fb19{color: #666;font-size: 19px;font-family: "Microsoft YaHei";font-weight: bold;}
+.f-fbo19{color: #eb862d;font-size: 19px;font-family: "Microsoft YaHei";font-weight: bold;}
+.f-fb23{color: #eb862d;font-size: 23px;font-family: "Microsoft YaHei";font-weight: bold;}
+.clear{clear:both;}
+/* /function */
+
+/*common css*/
+body{font-family: "Microsoft YaHei";font-size: 14px;background:#f9f9f9;}
+a{text-decoration: none;}
+a,a:hover{color:#333;}
+.comWidth{width: 1200px;margin-left:auto;margin-right: auto;}
+button{border:none;}
+.pagePosition span{height:55px;line-height: 55px; color: #666;font-size: 14px;font-family: "Microsoft YaHei";}
+.pagePosition span a{color:#666;}
+
+#index .nav .index a,
+#invest .nav .invest a,
+#borrow .nav .borrow a,
+#account .nav .account a,
+#joinus .nav .joinus a,
+#forum .nav .forum a,
+#about .nav .about a{color: #eb862d;font-weight: bold;}
+div.go-top {
+    display: none;
+    opacity: 0.6;
+    z-index: 999999;
+    position: fixed;
+    bottom: 113px;
+    left: 90%;
+    margin-left: 40px;
+    border: 0px solid #a38a54;
+    width: 40px;
+    height: 40px;
+    background-color: #eddec2;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+div.go-top:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+div.go-top div.arroww {
+    position: absolute;
+    left: 10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #cc3333;
+}
+
+div.go-top div.stick {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 8px;
+    height: 14px;
+    display: block;
+    background-color: #cc3333;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+/* /common css*/
+
+/*header css*/
+.header_title_bg,.header_nav_bg{width: 100%;}
+.header_title_bg{background: #efefef;}
+.header_nav_bg{background: #fff;}
+.header_title{height: 35px;line-height: 35px;}
+.login{margin-left: 10px;margin-right: 15px;}
+.login a:link,.login a:visited{color: #eb862e;}
+.register a:link,.register a:visited{color: #2db271;}
+.accout_icon{background-image: url(../img/icon/accout_icon.png);background-repeat:  no-repeat;background-position:  center left;display: inline-block;text-indent: 2em;}
+.accout_icon a:link,.accout_icon a:visited{color: #666;}
+.phone_icon{background: url(../img/icon/phone_icon.png) no-repeat center left;display: inline-block;text-indent: 2em;}
+.phone_icon a:link,.phone_icon a:visited{color: #666;}
+.sign_icon{background: url(../img/icon/sign_icon.png) no-repeat center left;display: inline-block;text-indent: 2em;margin-right: 10px;margin-left: 30px;}
+.sign_icon a:link,.sign_icon a:visited{color: #eb862e;}
+
+
+
+/*nav css*/
+.header_logo {height: 113px; width: 170px; cursor: pointer; background: url(../img/logo.png) no-repeat center center;float: left;}
+
+.header_nav ul li{color:#666;font-size: 16px;display: block;float: left;height: 113px;line-height: 113px;margin-left: 67px; }
+.header_nav ul li a:hover{color: #eb862e;font-weight: bold; }
+
+/*fcous css 首页轮播器*/
+
+
+#myCarousel{height: auto;}
+.carousel-indicators {right: 50%;top:92%;}
+
+#myCarousel a.left{left:5%;top:50%;}
+#myCarousel a.right{right:5%;top:50%;}
+
+@media screen and (max-width:1400px){
+    #myCarousel a.left{left:5%;top:50%;}
+    #myCarousel a.right{right:5%;top:50%;}
+}
+
+/*content css*/
+
+.ad_sign{height: 163px; background: url(../img/index/indexHead.png) center center no-repeat;}
+
+/*标common*/
+.tender_active,.tender_car,.tender_more{background: #fff;border:1px solid #eee;border-bottom: none;width: 1198px;}
+.tender_active{}
+.tender_content,.tender_title,.tender_more{border-bottom: 1px solid #eee;}
+.tender_title{height:55px;line-height: 55px;font-size: 18px;color: #333; text-indent: 1.5em;}
+.tender_title p{color: #eb862d;margin-right: 15px;font-size: 14px;width: 300px;text-align: right;}
+.tender_content{height: 78px;line-height: 78px;font-size: 14px;padding-left: 15px;padding-right: 22px;}
+.title_icon{width: 27px;font-size: 18px; height: 27px;line-height:27px;text-align: center; border-radius: 3px;background: #35a7e0;color: #fff;display: inline-block;margin: 25.5px 0px;}
+.content_title{color: #666;display: inline-block;margin-left: 12px;width: 230px;}
+/*.content_title a:link,.content_title a:visited{display: inline-block;width: 230px;height: 78px;}*/
+.content_month{background: url(../img/icon/clock_icon.png) no-repeat center left;width: 180px;text-indent: 2em;}
+.content_money{background: url(../img/icon/lilv_icon.png) no-repeat center left;width: 195px;text-indent: 2em;}
+.content_lilv span{width:100px;display: inline-block; float: left; text-align: left; }
+.tender_active .content_lilv span{background: url(../img/icon/yearrate_icon.png) right 15px no-repeat;} 
+.tender_btn{width: 100px;font-family: "Microsoft YaHei"; height: 35px;line-height: 35px; border-radius: 1px;border:0px; margin-left: 55px;font-size: 17px;color: #fff;display: inline-block;float: right;margin-top: 20px;}
+.paying{background: #d8d8d8;}
+.already{background: #35a7e0;}
+
+.tender_more{height: 52px;line-height: 52px;text-align: center;margin-bottom: 15px;border: none;border-bottom: 1px solid #eee;width: 1198px;}
+.tender_more a:hover{text-decoration: underline; }
+/*.progress{width: 128px;margin-left: 78px;}*/
+.line{width: 128px;margin-left: 65px;height: 5px;margin-top: 36.5px}
+.line_text{margin-left: 25px;color: #666;}
+
+/*活动标*/
+.active_title span{background: url(../img/icon/flag_icon.png) no-repeat center left;float:left; display: inline-block;margin-left: 30px;}
+
+/*车货标　*/
+.car_title span{background: url(../img/icon/car_icon.png) no-repeat center left;display: inline-block;}
+.friendLink{background-color: #fff;}
+.friendLink_title {border:1px solid #eee;border-bottom: none;border-top: none;width: 1198px;}
+.friendLink_title span{background: #fff url(../img/icon/car_icon.png) no-repeat center left;display: inline-block;}
+
+/*混合box*/
+.mixbox{font-family: "Microsoft YaHei";}
+.new_box,.media_box,.userorder_box{background: #fff;height: 340px;float: left;border:1px solid #eee;margin-bottom: 20px;}
+.new_box,.media_box{margin-right: 15px;}
+.new_box{width:358px;padding: 10px 20px 10px 10px;border:1px solid #eee;}
+.media_box{width:388px;padding: 10px 0px;border:1px solid #eee;}
+.userorder_box{width:358px;padding: 10px 20px 10px 10px;border:1px solid #eee;}
+
+.mixbox_head {height:45px;line-height: 45px;font-family: "Microsoft YaHei";}
+.mixbox_head span{font-size: 18px;color: #333;text-indent: 14px; }
+.mixbox_head a{font-size: 12px;color: #666;}
+.mixbox .progress{height: 2px;}
+
+.new_box_content,.userorder_box_content{margin-top: -18px;}
+.new_box_content a:hover,.userorder_box_content a:hover{color: #eb862d;}
+.new_box_content ul{margin-left: 20px;}
+.userorder_box_content{margin-left: 5px;}
+.new_box_content li,.userorder_box_content li{text-indent: 0em;height: 46px;line-height: 46px; border-bottom: 1px dashed #cecece;}
+.new_box_content li{list-style-type:square;}
+.new_box_content ul>li:last-child,.userorder_box_content ul>li:last-child {border: none;}
+.new_box_content li span{color: #666;font-family: Verdana;font-size: 12px;}
+
+.userorder_box_content ul img{margin-top: 14px;float: right;display: inline-block;}
+.media_box .mixbox_head{padding-left: 10px;padding-right: 20px;}
+.media_box .progress{width: 358px;margin-left: 10px;}
+
+.media_box_content{width:388px;height: 85px;cursor: pointer;}
+/*.media_box>a:hover{background-color: red; }*/
+.media_box_content img{display: inline-block;width:101px;margin-left: 10px;margin-top: 15px;}
+.media_box_content p{display: inline-block;width: 238px;margin-right: 20px;margin-top: 25px;line-height: 22px;}
+.media_box_content:hover{color: #eb862d;}
+/*首页友情连接*/
+.friendLink{height: 143px;border-top: 1px solid #eeeeee;,border-bottom: 1px solid #eeeeee;background-color: #fff;margin-bottom: 40px;}
+.friendLink_title {height: 55px;line-height: 55px; text-indent: 1.5em;}
+.friendLink_title span{ background: url(../img/icon/friendLink.png) left center no-repeat; display: inline-block;}
+.friendLink img{display: inline-block;float: left;width: 1200px;height: 90px;}
+
+/*invest page*/
+.investHead{background: url(../img/invest/investHead.jpg) center center no-repeat;width:100%;height:290px;}
+
+
+
+.sortProcess {background-color: #fff;margin-bottom: 23px;}
+.sortProcess hr{width:100%;color: #eeeeee;text-align: center;}
+.sort,.process{width:553px;float: left;font-family:"Microsoft YaHei";color: #35a7e0;font-size: 18px;height: 48px;line-height: 48px;text-indent: 0.5em;padding-left: 20px;padding-right: 25px;}
+.sortProcessHeader{font-weight: bold;}
+.sort{width:548px;height: 192px;border-right: 1px solid #eee;background-color: #fff;}
+.process{width: 559px;background-color: #fff;height: 192px;}
+.processImg{background: url(../img/invest/liucheng.png) center center no-repeat;height: 144px;width: 559px;}
+.m-crumb-blank ul{margin-left:-10px;}
+.m-crumb-blank li:before{width:10px;content:'';}
+.sortProcessContent .sortItem{font-family:"Microsoft YaHei";color: #666;font-size: 14px;font-weight: bold;}
+.sortProcessContent .buxian{font-family:"Microsoft YaHei";color: #eb862d;font-size: 14px;margin-right: 10px;}
+.sortProcessContent ul li{height: 45px;line-height: 45px;border-bottom: 1px dashed #eee;}
+.sortProcessContent ul li a{color: #666;font-family:"Microsoft YaHei";font-size: 14px;margin-right: 10px;}
+.sortProcessContent ul>li:last-child{border-bottom: none;}
+
+/*invest content*/
+
+.investItem{color: #666;font-family: "Microsoft YaHei";margin-bottom: 5px;}
+.investItemLeft{background: #fff;width: 752px;height: 124px;padding-left: 15px;padding-right: 20px;/*border-right: 1px solid #eee;*/}
+/*.invItemBroder{width: 0px;height: 106px;border-left:1px solid red; float: right;margin-top: 10px;margin-right: 600px;}*/
+.investItemLeft p{display: inline-block;height: 62px;line-height: 62px;font-size: 16px;}
+.investItemLeft .title_icon{margin-top: 20px;margin-right: 13px;}
+/*.investItemRight{background: #fff;width: 353px;height: 125px; padding-left: 25px;padding-right: 34px;}*/
+.investItemRight{background: #fff;width: 378px;height: 125px; padding-left: 0px;padding-right: 34px;}
+.investItemRight .invMinBorder{width: 0px;height: 106px;border-left: 1px solid #eee;float: left;margin-right: 25px;margin-top: 11px;}
+.investDteail{height: 62px;line-height: 62px;}
+.investDteail .content_money{text-indent: 1.5em;}
+.investDteail .payMode{margin-right: 140px;}
+.investItemRight .progress{width: 125px;height: 6px;margin-top: 60px;}
+.investItemRight .line_text{height: 125px;line-height: 125px;}
+.investItemRight .invest_btn{ width: 100px;font-family: "Microsoft YaHei"; height: 35px;line-height: 35px; border-radius: 3px;border:0px; margin-left: 0px;font-size: 17px;color: #fff;display: inline-block;float: right;margin-top: 0px; }
+
+.investItemRight .investBtnText{width: 100px; height: 125px;}
+.investItemRight .alreadyMoney{width: 100px; display: inline-block;height: 50px;line-height: 50px; float: right; }
+
+.pageBreak{margin-top: 40px;width: 400px;margin-right: auto;margin-left: auto;}
+.pageBreak li:hover{color: red;}
+/*borrow page*/
+
+.borrowHead{background: url(../img/borrow/borrowHead.jpg) no-repeat center center;width: 100%;height:290px; }
+.borContent{margin-bottom: 20px;font-family: "Microsoft YaHei";}
+.borLeft{width:578px;border:1px solid #eee;height: 573px;background: #fff;padding: 0px 10px 15px 10px;}
+
+.borLeft form legend{height: 45px;line-height: 45px;color: #35a7e0;font-size: 18px;font-weight: bold;margin-bottom: 20px;font-family: "Microsoft YaHei";}
+.borLeft form input,.borLeft form select,.borLeft form textarea{border-radius: 1px;}
+.borLeft form input{width: 378px;height: 31px;line-height: 31px\9;}
+.borLeft form input,.borLeft form textarea{font-size: 14px;font-family: "Microsoft YaHei";}
+.borLeft .formitm{padding:10px 0 0;line-height:31px;}
+.borLeft .lab{float:left;width:130px;margin-left:15px;text-align:left;color: #666;font-family: "Microsoft YaHei";height: 41px; line-height: 41px;font-size: 14px;text-indent: 20px;}
+.borLeft .ipt .domain{margin:0 0 0 5px;font-weight:bold;color:#d20000;}
+.borLeft .formitm-1{margin-left: 170px;}
+.borLeft .formitm textarea{width: 390px;height: 100px;}
+.borLeft .formitm .checkbox{font-size: 14px;font-family: "Microsoft YaHei"; }
+.borLeft .formitm .checkbox input{width: 14px;height: 14px;}
+.borLeft .u-btn{width: 130px;height: 40px;background: #eb862d;color: #fff;font-size: 18px;font-family: "Microsoft YaHei";border:none;margin-left: 20px;}
+.borLeft hr{margin-top: 20px;margin-bottom: 10px;}
+.borLeft .formitm select{width: 128px;height: 41px;font-size: 14px;font-family: "Microsoft YaHei";}
+.borLeft .broNameIcon{background: url(../img/icon/broName.png) no-repeat left center;}
+.borLeft .broAreaIcon{background: url(../img/icon/broArea.png) no-repeat left center;}
+.borLeft .broPledIcon{background: url(../img/icon/broPled.png) no-repeat left center;}
+.borLeft .broDesIcon{background: url(../img/icon/broDes.png) no-repeat left center;}
+.borLeft .broMoneyIcon{background: url(../img/icon/broMoney.png) no-repeat left center;}
+.borLeft .broPhoneIcon{background: url(../img/icon/broPhone.png) no-repeat left center;}
+.borRight{width: 570px;height: 568px;line-height: 45px; padding: 10px 10px 10px 20px; color: #666;font-family: "Microsoft YaHei";font-size: 14px;}
+.borRight h2{font-weight: bold;}
+.borRight hr {margin-top: 20px;margin-bottom: 20px;border:1px dashed #d1d1d1;}
+.broFoot{height:227px; width: 1200px;margin: 0 auto;margin-top: 20px;margin-bottom: 25px;}
+.broFoot .broFootTitle{height: 52px;line-height: 52px;text-indent: 18px; background: #fff;color: #35a7e0;font-size: 18px;font-weight: bold;}
+.broFoot .borProcess{background: #fff url(../img/borrow/borrowBtm.png) no-repeat center center; height: 175px;}
+
+/* joinus,account,about common css*/
+.comContent{margin-bottom: 25px;}
+.comContent .comLeftMune {width: 167px;height: 455px; font-family: "Microsoft YaHei";font-size: 18px;margin-bottom: 25px; }
+.muneUnit{width: 155px;height: 80px;line-height: 80px; text-indent: 35px; background:url(../img/muneBag.png) no-repeat center center; color: #777; float: left;cursor:pointer;}
+.muneUnitHover{width: 155px;height: 80px;line-height: 80px;text-indent: 35px; background:url(../img/muneBagHover.png) no-repeat center center; color: #fff;float: left;cursor:pointer;font-weight: bold; }
+.muneUnit:hover{width: 155px;height: 80px;line-height: 80px;text-indent: 35px; background:url(../img/muneBagHover.png) no-repeat center center; color: #fff;font-weight: bold;}
+.comLeftMune hr{display: block; float: left; margin-top: 8px;margin-bottom: 5px;border-top:1px solid #d8d8d8;width: 143px;}
+.comContent .TabRight .comRightBox{width: 1031px;background: #fff;border:1px solid #d8d8d8;margin-bottom: 25px;}
+.comContent .TabRight .defaultNone{display: none;}
+.comRightBox .comTitle{height: 80px;text-align: center;width: 100%;margin-bottom: 30px;}
+.comRightBox .comTitle p{font-size: 22px;font-family: "Microsoft YaHei";color: #35a7e0;font-weight: bold;margin-top: 30px;margin-bottom: 5px;}
+.comRightBox .comTitle span{font-size: 18px;font-family: Verdana;color: #afafaf;font-weight: normal;}
+.comRightBox .comRigBotm{width: 1001px;padding: 0px 15px;font-family: "Microsoft YaHei";}
+.comRightBox .comRigBotm hr{border:1px dashed #cfcfcf;}
+
+
+/*joinus page*/
+.joinusHead{background: url(../img/joinus/joinusHead.png) no-repeat center center;width: 100%;height: 290px;}
+
+
+/*account page*/
+.accountHead{background: url(../img/account/accountHead.png) no-repeat center center;height: 290px;width: 100%}
+	/*我要充值*/
+	.comRightBox .recharge p{height: 40px;line-height: 40px;display: inline-block;}
+	.rechargeBtn button{width: 126px;height: 42px;border:none;font-size: 20px;margin-top: 15px;}
+	.rechargeBtn #chongqian{color: #fff;background-color: #eb862d;margin-right: 10px;}
+	.rechargeBtn #tixian{color: #777;background-color: #e6e6e6;margin-right: 60px;}
+	.comRightBox .rechargeBotm{background-color: #f9f9f9;height: 310px;margin-top: 50px;width: 100%;margin-bottom: 51px;}
+	.comRightBox .rechargeBotm p{height: 52px;line-height: 52px;text-indent: 10px;font-size: 18px;color: #777; border:1px solid #d8d8d8;display: block;width: 1000px;}
+	.comRightBox .rechargeBotm .recBotmBtom{width: 1000px;height: 257px; border:1px solid #d8d8d8;border-top: none;}
+	.rechargeBotm .recBotmBtom .recDetails{width:248.5px;height: 196px;float: left;border-right: 1px solid #d8d8d8;margin-top: 30px;text-align: center;}
+	.rechargeBotm .recBotmBtom .recDetails p{width: 248px;border:none;margin-top: 20px;margin-bottom: 17px;}
+	.rechargeBotm .recBotmBtom .recDetails span{color: #777;font-size: 15px;}
+	.recBotmBtom .recDetails span b{color: #777;font-size: 30px;}
+	.rechargeBotm .recBotmBtom>.recDetails:last-child{border:none;}
+            /*充值*/
+            .TabRight .ctCom{width: 1031px;background: #f9f9f9;border:1px solid #d8d8d8;margin-bottom: 25px;display: none;border-radius: 5px;}
+            .TabRight .ctCom .ctTit{
+                height: 40px;
+                line-height: 40px;
+                text-indent: 14px;
+                font-size: 16px;
+                color: #666;
+                font-family: "Microsoft YaHei";
+                border-bottom: 1px dashed #666;
+                margin-bottom: 30px;
+        }
+            .TabRight .chongzhiBox{height: 645px;}
+            .TabRight .chongzhiBox .baofuLogo{background:#fff url(../img/account/zhifu.jpg) no-repeat center center;width: 156px;height: 51px;margin-left: 15px;border-top:3px solid #35a7e0; }
+            .chongzhiBox .chongzhiBoxBtm{width: 1001px;margin: 0 auto;background-color: #fff;padding-top: 90px;height: 410px;}
+            .chongzhiBox .chongzhiBoxBtm .CZBtnBox{width: 500px;margin:0px auto 50px auto;height: 30px;font-size: 16px;color: #666;font-family: "Microsoft YaHei";}
+            .chongzhiBox .chongzhiBoxBtm label,.chongzhiBox .chongzhiBoxBtm input{height: 30px;line-height: 30px;display: inline-block;}
+            .chongzhiBox .chongzhiBoxBtm label{margin-right: 10px;}
+            .chongzhiBox .chongzhiBoxBtm input{border-radius: 1px;}
+            #confirmBtn{width: 100px;height: 40px;color: #fff;text-align: center;font-size: 16px;background-color: #35a7e0;border:none;margin-bottom: 10px;}
+            .chongzhiBox .chongzhiBoxBtm .chongzhiText{width: 1000px;margin: 40px auto;margin-top: 100px;}
+            .chongzhiBox .chongzhiBoxBtm .chongzhiText span{background:#fff url(../img/icon/can.png) no-repeat left center; padding-left: 20px;color:#b0b0b0;font-size: 14px;font-family: "Microsoft YaHei";line-height: 35px;height: 40px;margin-left: 30px;}
+            .chongzhiBox .chongzhiBoxBtm .chongzhiText p{color:#b0b0b0;font-size: 14px;font-family: "Microsoft YaHei";line-height: 35px;text-indent: 30px;}
+            /*我要提现*/
+            .TabRight .tixianBox {height: 845px;}
+            .TabRight .tixianBox .tixianBoxBtm{width: 941px;height: 320px; margin:30px auto;background-color: #fff;padding: 30px;}
+            .tixianBox .tixianBoxBtm .tixianBoxForm{width: 470px;border-right: 1px dashed #777;height: 260px;float: left;padding-top: 60px;}
+            .tixianBoxBtm .tixianBoxForm label{display: inline-block;height: 30px;font-size: 14px;font-family: "Microsoft YaHei";margin-left:20px;margin-right: 20px;}
+            .tixianBoxBtm .tixianBoxForm input{display: inline-block;height: 30px;font-size: 14px; font-family: "Microsoft YaHei";}
+            #TXMoneyVal{width:220px;margin-right: 100px;}
+            #TXCodeVal{margin-left: 5px;width: 100px;margin-top: 20px;}
+            #TXCodeBtn{display: inline-block;background-color: #35a7e0;height: 35px;width: 90px;border:none;color:#fff;font-size: 10px;font-family: "Microsoft YaHei";margin-top: 10px;margin-left: 15px;}
+            #tixianBtn{width: 240px;background-color: #35a7e0;height: 50px;border:none;display: block;font-size: 16px;font-family: "Microsoft YaHei";color: #fff;text-align: center;margin:30px auto auto 90px; }
+            .tixianBox .useMes{font-size: 18px;font-family: "Microsoft YaHei";color: #666;padding-top: 50px;}
+            .tixianBox .useMes p{height: 35px;line-height: 85px;text-align: left;text-indent: 120px;}
+
+           .tixianBox .tixianText{width: 1000px;margin: 40px auto;margin-top: 100px;}
+            .tixianBox .tixianText span{background:#fff url(../img/icon/can.png) no-repeat left center; padding-left: 30px;color:#b0b0b0;font-size: 14px;font-family: "Microsoft YaHei";line-height: 35px;height: 40px;margin-left: 30px;}
+            .tixianBox .tixianText p{color:#b0b0b0;font-size: 14px;font-family: "Microsoft YaHei";line-height: 35px;text-indent: 30px;}
+
+
+
+	/*投资记录*/
+    .comRightBox .investRec table{width: 999px;color: #777;font-size: 14px;font-weight: normal;background-color: #f9f9f9;border:1px solid #d8d8d8;}
+    .comRightBox .investRec table thead {font-size: 16px;font-weight: normal;}
+    .investRec table thead tr th{text-align: center;font-weight: normal;vertical-align: middle;}
+    .investRec table thead tr{height: 45px;}
+    .investRec table tbody tr{height: 55px;}
+    .investRec table tbody tr td{vertical-align: middle;text-align: center;cursor:pointer;}
+    /*.investRec table tbody tr:hover{ background-color: #d8d8d8; }*/
+	
+
+	/*资金记录*/
+    .comRightBox .moneyRec table{width: 999px;color: #777;font-size: 14px;font-weight: normal;background-color: #f9f9f9;border:1px solid #d8d8d8;margin-top: 5px;}
+    .comRightBox .moneyRec table thead {font-size: 16px;font-weight: normal;}
+    .moneyRec table thead tr th{text-align: center;font-weight: normal;vertical-align: middle;}
+    .moneyRec table thead tr{height: 45px;}
+    .moneyRec table tbody tr{height: 55px;}
+    .moneyRec table tbody tr td{vertical-align: middle;text-align: center;cursor:pointer;}
+
+    /*积分管理*/
+    .comRightBox .inteManage .interTxt{margin-top: 15px;background:url(../img/icon/interTxt.png) no-repeat left center;text-indent: 20px;}
+    .comRightBox .inteManage table{width: 999px;color: #777;font-size: 14px;font-weight: normal;background-color: #f9f9f9;border:1px solid #d8d8d8;margin-top: 5px;}
+    .comRightBox .inteManage table thead {font-size: 16px;font-weight: normal;}
+    .inteManage table thead tr th{text-align: center;font-weight: normal;vertical-align: middle;}
+    .inteManage table thead tr{height: 45px;}
+    .inteManage table tbody tr{height: 55px;}
+    .inteManage table tbody tr td{vertical-align: middle;text-align: center;cursor:pointer;}
+
+    /*认证管理*/
+    .certManage .certHead{background-color: #f9f9f9;width: 995px;height: 52px;border:1px solid #d8d8d8;border-bottom: none;margin-right: auto;margin-left: auto;}
+    .certManage .certForm{background-color: #f9f9f9;width: 995px;height: 446px;border:1px solid #d8d8d8;margin-bottom: 25px;margin-right: auto;margin-left: auto;}
+    .certManage .certHead>p:last-child{border-right: none;}
+    .certManage .certHead p{width: 329.6px;display: inline-block;float: left;text-align: center;line-height: 52px;color: #777;font-size: 18px;font-family: "Microsoft YaHei";border-right: 1px solid #eae9e9; }
+    .certManage .certHead p:hover{background-color: #ebebeb;cursor: pointer;}
+    .certPHover{background-color: #ebebeb;cursor: pointer;}
+    .certManage .certHead p span.certPhone{background: url(../img/icon/certPhone.png) no-repeat left center;padding-left: 20px;}
+    .certManage .certHead p span.certIDCard{background: url(../img/icon/certIDCard.png) no-repeat left center;padding-left: 25px;}
+    .certManage .certHead p span.certMail{background: url(../img/icon/certMail.png) no-repeat left center;padding-left: 20px;}
+        /*认证管理表单主体*/
+    .certForm{font-size: 18px;color: #777;font-family: "Microsoft YaHei"; }
+        /*认证管理手机认证内容*/
+    .certForm .certPhoneCon{width: 556px;height: 141px;background-color: #f9f9f9;margin:110px auto auto auto;padding-top: 30px;}
+    .certForm .certPhoneCon p{text-align: left;background: url(../img/account/certSuc.png) no-repeat right center;width: 414px;height: 113px;margin-left: 60px;line-height: 113px;}
+        /*认证管理身份证银行卡认证*/
+    .certForm .certIDCardCon{display:none;width: 556px;height: 401px;background-color: #f9f9f9;margin:10px auto auto auto;padding-top: 30px;}
+    .certIDCardCon form{margin-top: 10px;width: 350px;margin-right: auto;margin-left: auto;}
+    .certIDCardCon form input {display:inline-block;height:38px;line-height:38px;padding:0 10px;border:1px solid #eee;}
+    .certIDCardCon form label{display: inline-block;margin-right: 0px;width: 85px;height: 55px;line-height: 55px;font-size: 14px;color: #777;font-family: "Microsoft YaHei";}
+    .certIDCardCon form button{background-color: #eb862d;color: #fff;font-size: 14px;text-align: center;width: 215px;height: 50px;line-height: 50px;margin: 15px auto 125px 95px;font-size: 18px;font-family: "Microsoft YaHei";}
+
+        /*认证管理邮箱认证内容*/
+    .certForm .certMailCon{display:none;width: 556px;height: 241px;background-color: #f9f9f9;margin:110px auto auto auto;padding-top: 30px;font-family: "Microsoft YaHei";}
+
+
+    /*.Getverify {position:absolute;display:inline-block;left:326px;top:5px;height:38px;line-height:38px;width:100px;text-align:center;color:#009d67;border:1px solid #8bc5a8;border-radius:3px;background-color:#e0f0e8;cursor:pointer;}*/
+    .warnSpan{display:none;height:38px;line-height:48px;padding:5px 30px 0px;background:url(..img/icon/span-error-icon.png) 2px center no-repeat;color:#f67b71;}
+    .certMailCon form{margin-top: 10px;width: 350px;margin-right: auto;margin-left: auto;}
+    .certMailCon form input#eMailverify {display:inline-block;height:48px;line-height:48px;padding:0 10px;border:1px solid #eee;}
+    .certMailCon form div.emailVerCodBox{border: 1px solid #f9f9f9;float: left;height:36px;line-height:36px;background-color: #fff;width:216px;padding: 5px;}
+    div.emailVerCodBox input#emailVeryCod{width:110px;height: 32px;line-height: 32px;float: left;display: inline-block;border: none;outline: none;}
+    
+    div.emailVerCodBox input.Getverify{width: 84px;display: inline-block;height: 36px;line-height: 36px;background-color: #eb862d; border: none;color: #fff;font-family: "Microsoft YaHei";float: right;font-size: 14px;}
+    .certMailCon form label{display: inline-block;margin-right: 0px;width: 85px;height: 55px;line-height: 55px;font-size: 14px;color: #777;font-family: "Microsoft YaHei";float: left;}
+    .certMailCon form button{background-color: #eb862d;color: #fff;font-size: 14px;text-align: center;width: 215px;height: 50px;line-height: 50px;margin: 25px auto 125px 95px;font-size: 18px;font-family: "Microsoft YaHei";}
+
+    .search-form{float: left; background-color: #fff;padding:5px;}
+    .search-text{height:25px;line-height: 25px;float: left;width: 226px;border: 0;outline: none;}
+    .search-button{/*background-image: url(search-button.png);*/width:99px;height:29px;float: left;border: 0;background-color: #eb862d; color: #fff;font-family:  "Microsoft YaHei";font-size: 14px;}
+
+    /*更多信息*/
+    .moreInfo .infoHead{background-color: #f9f9f9;width: 995px;height: 52px;border:1px solid #d8d8d8;border-bottom: none;margin-right: auto;margin-left: auto;}
+    .moreInfo .infoForm{background-color: #f9f9f9;width: 995px;height: 446px;border:1px solid #d8d8d8;margin-bottom: 25px;margin-right: auto;margin-left: auto;}
+    .moreInfo .infoHead p{width: 497.5px;display: inline-block;float: left;text-align: center;line-height: 52px;color: #777;font-size: 18px;font-family: "Microsoft YaHei";}
+    .infoHead p span{height: 48px;line-height: 48px;border-bottom: 3px solid #777;display: inline-block;}
+    .moreInfo .infoHead p:hover{background-color: #ebebeb;cursor: pointer;}
+    .infoHead p span:hover{height: 48px;line-height: 49px;border-bottom: 3px solid #35a7e0;}
+    .infoPHover{background-color: #ebebeb;cursor: pointer;}
+    /*.infoSpanHover{height: 48px;line-height: 49px;border-bottom: 3px solid red;color:red;}*/
+    .moreInfo .infoHead .jinjiSpan{background: url(../img/icon/jinjiIcon.png) no-repeat left center;padding-left: 27px;}
+    .moreInfo .infoHead .zichanSpan{background: url(../img/icon/zichanIcon.png) no-repeat left center;padding-left: 27px;}
+    .comRigBotm .infoForm .infozichan{display: none;}
+
+
+
+    /*账户中心　修改密码表单*/ /*加盟中心　填写信息表单*/
+    .comRightBox .changePw form,.comRightBox .joinusInfo form,.comRightBox .moreInfo form{margin-top: 96px;width: 410px;margin-right: auto;margin-left: auto;margin-bottom: 25px;}
+    .changePw form label,.joinusInfo form label,.moreInfo form label{display: inline-block;margin-right: 0px;width: 85px;height: 55px;line-height: 55px;font-size: 14px;color: #777;font-family: "Microsoft YaHei"; }
+    .changePw form input,.joinusInfo form input,.moreInfo form input{width: 301px;height: 36px;line-height: 36px;border:1px solid #eee;margin-bottom: 15px;text-indent: 0.6em;font-size: 18px;}
+    .changePw form button,.joinusInfo form button,.moreInfo form button{background-color: #eb862d;color: #fff;font-size: 14px;text-align: center;width: 215px;height: 50px;line-height: 50px;margin: 65px auto 145px 120px;font-size: 18px;font-family: "Microsoft YaHei";}
+
+
+
+/*about page*/
+.aboutHead{background: url(../img/about/aboutHead.png) no-repeat center center;height: 290px;width: 100%;}
+
+/*登录框*/
+#close{ 
+	background:url(../img/icon/close.png) no-repeat; 
+	width:30px; 
+	height:30px; 
+	cursor:pointer; 
+	position:absolute; 
+	right:5px; 
+	top:15px; 
+	text-indent:-999em;
+	}
+#background{ 
+	background-color:#ccc;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index:1000;
+	display: none;
+	}
+#login{ 
+	
+	}
+.loginCon,#content{ 
+	position:absolute; 
+	width:423px;
+	height:351px;
+	background-color: #fff;
+	font-family:"Microsoft YaHei";
+	border-radius: 4px;
+	/*position:fixed;*/
+	z-index:1001;
+	display: none;
+	}
+.loginCon .loginTit{
+	font-weight: bold;
+	font-size: 24px;
+	text-indent: 2em;
+	width: 423px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom:2px solid #f1f2f2; 
+	margin-bottom: 25px; 
+	}
+.loginCon .loginMain{
+	width: 361px;
+	margin: 0 auto;
+}
+
+.loginCon input{
+	border-radius: 1px;
+	border: 1px solid #cbccce;
+	 
+	text-indent: 2.2em; 
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	height: 35px;
+	line-height: 35px;
+	width: 255px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+} 
+.loginCon #loginUser{background:url(../img/icon/loginUser.png) no-repeat left center;}
+.loginCon #loginPw{margin-bottom: 10px; background:url(../img/icon/loginPass.png) no-repeat left center;}
+
+.loginCon .loginMain span{
+	color: #aaa;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.loginCon .loginMain button{
+	background-color: #eb862d;
+	color: #fff;
+	width: 350px;
+	height: 37px;
+	border:none;
+	margin: 0 auto; 
+	border-radius: 1px;
+	font-size: 16px;
+	font-family: "宋体";
+	 }
+.loginCon p b{color: #555555;font-size: 16px;font-weight: bold;height: 35px;line-height: 35px;}
+.loginCon p input{text-indent: 5px;}
+.loginCon #loginVerify{width: 90px;height: 35px;}
+.loginCon p img{margin-bottom: 8px;height: 35px;}
+.loginCon .loginMain .loginGoReg{margin-top: 15px;text-indent: 110px;color: #b9b9b9;font-size: 14px;}
+.loginMain .loginGoReg a{color: #eb862d;}
+/*/登录框*/
+ 
+ /*注册 page*/
+#regHtml{height: 100%;}
+#reg{height: 100%;width: 100%;}
+#reg .regBg {
+width: 100%;
+height: 90%;
+background: #5797ce url(../img/reg/regBg.jpg) no-repeat center center;
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:1400px){
+    #reg .regBg {
+    width: 100%;
+    height: 90%;
+    background: #5797ce url(../img/reg/regBg1204.jpg) no-repeat center center;
+}
+}
+.regBg .regContent .regLeftTxt{
+    height: 209px;
+    width: 574px; 
+    margin-top: 231px;
+    margin-left: 40px;
+    background:url(../img/reg/regLeftTxt.png) no-repeat center center;
+}
+
+
+.regForm{
+    width: 350px;
+    /*height: 680px;*/
+    background-color: #fff;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    z-index: 999;
+    position: absolute;
+    top:30%;
+    left: 52%;
+    border:1px solid #d9d9d9;
+    padding: 15px;
+    font-family: "Microsoft YaHei";
+}
+@media screen and (max-width:1400px){
+    .regForm{top:35%;}
+}
+
+.regForm .regFormHead{
+    border-bottom: 1px dashed #e2e2e2;
+}
+.regForm .regFormHead .regFormTit{
+    font-weight: bold;
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+.regForm .regFormHead .regFormTit2{
+    margin-top: 10px;
+    text-indent: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-family: "宋体";
+    color: #969696;
+}
+.regFormHead .regFormTit2{margin-bottom: 22px;}
+.regFormHead .regFormTit2 a{
+    color: #eb862d;
+    display: inline;
+}
+
+.regForm form{
+    margin-top: 45px;
+}
+.regForm .regTips {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #969696;
+    font-family: "宋体";
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.regForm form .regPhVerifyImg{width: 270px;margin-left: 100px;margin-bottom: 20px; }
+
+.regForm .regTips span,.regForm form label span{color:red;}
+
+#regUserName,#regPassWd,#regRePassWd,#regPhone,#regPhVeryCode{
+    width: 230px;
+    height: 25px;
+    text-align: left;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #555;
+    border-radius: 0px;
+    outline: none;
+}
+#regPhImgvefy,#imgVerify{
+    width: 90px;
+    height: 25px;
+    text-align: left;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #555;
+    border-radius: 0px;
+}
+
+.regForm form .errorTips{
+    margin-top: 10px;
+    margin-left: 10px;
+    color:red;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    display: none;
+}
+/*.regForm form .regPhVerifyAc{display: none;}*/
+
+.regForm form #imgVerifyTip {
+    color:red;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    margin-top:20px;
+    display:block;
+    float:left;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: none;
+}
+.regForm form .regImgBox{
+    display: inline-block;
+    float: left;
+  
+    margin-top: 3px;
+    margin-left: 5px;
+    
+}
+.regForm form label,.detTopRight .formitm-1 label{
+    height: 25px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #323232;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.regForm .form-horizontal .control-group {margin-bottom: 7px;}
+.regForm form .formitm-1{margin-left: 25px;margin-top: -15px;}
+.regForm form .formitm-1 input{margin-top: 1.5px;}
+.regForm form #regbtn{width: 330px;height: 38px;background-color: #eb862d;color: #fff;font-size: 16px;font-family:  "宋体";margin-left: 10px; }
+.regForm form #regPhonevefy {background-color: #eb862d;color: #fff;font-size: 12px;font-family:  "Microsoft YaHei";margin-left: 10px; width: 100px;height: 35px;border-radius: 3px;}
+
+
+/*找回密码page*/
+#findPwHtml{height: 100%;}
+#findPw{height: 100%;width: 100%;}
+#findPw .findBg {
+width: 100%;
+height: 100%;
+background: #5797ce url(../img/reg/regBg.jpg) no-repeat center center;
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:1400px){
+    #findPw .findBg {
+    width: 100%;
+    height: 100%;
+    background: #5797ce url(../img/reg/regBg1204.jpg) no-repeat center center;
+}
+}
+.findBg .findContent .findLeftTxt{
+    height: 209px;
+    width: 574px; 
+    margin-top: 231px;
+    margin-left: 40px;
+    background:url(../img/reg/regLeftTxt.png) no-repeat center center;
+}
+.findForm{
+    width: 350px;
+    /*height: 680px;*/
+    background-color: #fff;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    z-index: 999;
+    position: absolute;
+    top:30%;
+    left: 52%;
+    border:1px solid #d9d9d9;
+    padding: 15px;
+    font-family: "Microsoft YaHei";
+}
+.findForm .findFormHead{
+    border-bottom: 1px dashed #e2e2e2;
+}
+.findForm .findFormHead .findFormTit{
+    font-weight: bold;
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.findFormHead .findFormTit2{margin-bottom: 22px;}
+.findFormHead .findFormTit2 a{
+    color: #eb862d;
+    display: inline;
+}
+
+.findForm form{
+    margin-top: 45px;
+}
+
+.findForm form .regPhVerifyImg{width: 270px;margin-left: 100px;margin-bottom: 20px; }
+
+.findForm .regTips span,.findForm form label span{color:red;}
+
+#findUserName,#findPassWd,#findRePassWd,#findPhone,#regPhVeryCode{
+    width: 230px;
+    height: 25px;
+    text-align: left;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #555;
+    border-radius: 0px;
+    outline: none;
+}
+#findPhImgvefy,#findImgVerify{
+    width: 90px;
+    height: 25px;
+    text-align: left;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #555;
+    border-radius: 0px;
+}
+
+.findForm form .errorTips{
+    margin-top: 10px;
+    margin-left: 10px;
+    color:red;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    display: none;
+}
+/*.regForm form .regPhVerifyAc{display: none;}*/
+
+.findForm form #findImgVerTip {
+    color:red;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    margin-top:20px;
+    display:block;
+    float:left;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: none;
+}
+.findForm form .findImgBox{
+    display: inline-block;
+    float: left;
+  
+    margin-top: 3px;
+    margin-left: 5px;
+    
+}
+.findForm form label{
+    height: 25px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #323232;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.findForm .form-horizontal .control-group {margin-bottom: 7px;}
+
+.findForm form #findBtn{width: 330px;height: 38px;background-color: #eb862d;color: #fff;font-size: 16px;font-family:  "宋体";margin-left: 10px; }
+.findForm form #findPhonevefy {background-color: #eb862d;color: #fff;font-size: 12px;font-family:  "Microsoft YaHei";margin-left: 10px; width: 100px;height: 35px;border-radius: 3px;}
+
+
+
+/*投资详情 page*/
+.detTopLeft,.detTopRight{background-color: #fff;}
+.detTopLeft{   
+    width: 776px;
+    height: 398px;
+    border:1px solid #eee;
+    border-radius: 1px;
+}
+.detTopRight {
+    width: 406px;
+    height: 398px; 
+    border:1px solid #eee;
+    border-radius: 1px;
+}
+.detTopLeft .detailTopTit,{
+
+}
+.detTopLeft .detailTopTit,.detTopRight .detailTopTit{ 
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px dashed #eee;
+    font-size: 17px;
+    color: #333;
+    font-family: "Microsoft YaHei";
+    
+}
+
+.detTopLeft .detailTopTit{
+
+   
+}
+.detTopLeft .detailTopTit .title_icon{
+    margin-left: 15px;
+    margin-bottom:15px; 
+}
+.detTopRight .detailTopTit {
+    height: 54px;
+    border-bottom: 1px dashed #eee;
+    text-indent: 25px;
+}
+.detailTop .detLeftCont {
+    width: 690px;
+    margin:0 auto;
+
+}
+.detLeftCont .deLefConUint{width: 230px;height: 159px;}
+.detLeftCont .deLefConUint p{margin-top: 45px;margin-bottom: 10px;}
+.detLeftCont hr{float: left;border:1px dashed #eee;width: 100%}
+.detTopRiCont{padding: 15px;}
+.detTopRiCont p.detTopRiContP{margin-top: 25px;}
+.detTopRiCont input{width: 320px;height: 40px;border:1px solid #eee;font-size: 15px;margin-top: 15px;margin-bottom: 15px;}
+.detTopRiCont .add-on{width: 20px;height: 40px;line-height: 40px; font-family: "Microsoft YaHei";font-size: 16px;color: #666;margin-top: 15px;margin-bottom: 15px;}
+.detTopRiCont .detCheck{width: 350px;margin-top: 35px;}
+.detTopRiCont .detCheck input{display: inline-block;width: 15px;height: 15px;}
+.detTopRiCont button{width: 355px;height: 60px;line-height: 60px; background-color: #eb862d;color: #fff;font-family: "Microsoft YaHei";font-size: 22px;margin: 5px auto 0 auto;}
+
+.f-fb16{color: #35a7e0;font-family: "Microsoft YaHei";font-size: 16px;font-weight: bold;}
+.f-f17{color: #333;font-family: "Microsoft YaHei";font-size: 17px;}
+.invdetCont{margin-top: 15px;margin-bottom: 20px; background-color: #fff;color: #666;font-family: "Microsoft YaHei";font-size: 14px; }
+.invdetCont .detContHead{height: 48px;line-height: 48px; border:1px solid #eee;background-color: #fafafa;}
+.invdetCont .detContHead span{
+    display: inline-block;
+    width: 145px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    height: 45px;
+    border-top: 3px solid #fafafa;
+}
+.invdetCont .detContHead span:hover{
+
+    height:45px;
+    width: 145px;
+    border-right: 1px solid #eee;
+    border-top: 3px solid #35a7e0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.invdetSpanHover{
+    height:45px;
+    border-right: 1px solid #eee;
+    border-top: 3px solid #35a7e0;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.detContBotm{background-color: #fff;padding: 20px 35px;width: 1130px;}
+/*.jiedaiMes{display: none;}*/
+.touziRec{display: none;}
+.payWay{display: none;}
+.detContBotm .jiedaiMes span.f-fb16{width: 100%;float: left;}
+.detContBotm .jiedaiMes p.MesHeadP{width: 376.6px;text-align: left;height: 50px;line-height: 50px;float: left;margin-bottom: 20px;}
+ .diyawuMes{width: 1130px;float: left;margin-bottom: 20px;}
+ .diyawuMes p{height: 30px;line-height: 30px;}
+
+ /*详情页 抵押物轮播器*/
+ 
+.detFocus{height: 500px;background: #FFF;margin: 50px auto;}
+#containerss { width: 960px; margin:0 auto;height: 440px; border: 0px solid #333; overflow: hidden; position: relative;}
+#list { width: 30000px; height: 440px; position: absolute; z-index: 1;}
+#list li { float: left;}
+.arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 180px; background-color: RGBA(0,0,0,.3); color: #fff;}
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+#containerss:hover .arrow { display: block;}
+#prev { left: 20px;}
+#next { right: 20px;}
+#list p {
+    width:480px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #15abe0;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+ 
+.detContBotm hr{border:1px dashed #e6e6e6;margin: 20px auto;}
+
+/*详情页　投资记录*/
+/*.touziRec table{align: right;}　*/
+.touziRec table,.payWay table{width: 1130px;color: #777;font-size: 14px;font-weight: normal;background-color: #f9f9f9;border:1px solid #d8d8d8;margin-left: auto;margin-right: auto;}
+.touziRec table thead ,.payWay table{font-size: 16px;font-weight: normal;}
+.touziRec table thead tr th,.payWay table thead tr th{text-align: center;font-weight: normal;vertical-align: middle;}
+.touziRec table thead tr,.payWay table thead tr{height: 45px;}
+.touziRec table tbody tr,.payWay table tbody tr{height: 55px;}
+.touziRec table tbody tr td,.payWay table tbody tr td{vertical-align: middle;text-align: center;cursor:pointer;}
+
+
+
+/*公共底部*/
+.footer{
+    width:100%;
+    height: 340px;
+    overflow: hidden;
+    background-color: #efefef;
+    font-family: "Microsoft YaHei";
+}
+.footContent,.footBottom {background-color: #efefef;}
+.footText01{width:168px;height: 120px;border-right: 1px solid #ddd;float:left;background-color: #efefef;margin-top: 47px;margin-bottom: 22px;}
+.footText02{width:271px;height: 120px;border-right: 1px solid #ddd;float:left;background-color: #efefef;margin-top: 47px;margin-bottom: 22px;}
+.footText03{width:277px;height: 120px;border-right: 1px solid #ddd;float:left;background-color: #efefef;margin-top: 47px;margin-bottom: 22px;}
+.footText01 p,.footText02 p,.footText03 p{
+    font-size: 18px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.footText01 span,.footText02 span,.footText03 span{
+    display: block;
+    float: left;
+    font-size: 13px;
+    color: #666;
+    margin-left: -5px;
+    height: 30px;
+    line-height: 30px;
+}
+.footText01 p,.footText01 span {
+    width: 168px;
+    text-indent: 15px;
+}
+.footText02 p,.footText02 span {
+    width: 271px;
+    text-align: center;
+}
+.footText03 p,.footText03 span {
+    width: 277px;
+    text-align: center;
+}
+.footText01 i,.footText02 i,.footText03 i{
+    display: inline-block;
+    background:url(../img/icon/footSpan.png) no-repeat center center;
+    width: 10px;
+    height: 11px;
+    line-height: 11px;
+    margin: 5px 5px 0 0;
+}
+.phoneText{
+    background: #efefef url(../img/footPHWeixi.png) center center no-repeat;
+    width: 422px;
+    height: 140px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 25px;
+}
+
+.footer hr{float: left;border:10px solid #eee;width: 100%;display: block;}
+
+
+.footBottom p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+    display: inline-block;
+    width: 100%;
+}
+.footBottom {
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*论坛*/
+.f-fu18b{font-family: "Microsoft YaHei";font-weight: bold;font-size: 18px;color: #666;}
+.f-fu16{font-family: "Microsoft YaHei";font-weight: normal;font-size: 16px;color: #333;}
+.f-fu12{font-family: "Verdana";font-weight: normal;font-size: 12px;color: #b1b1b1;}
+.comWidth{width: 1200px;margin-left:auto;margin-right: auto;}
+.forum-topBox{height: 110px;background-color: #f6f6f6;}
+.f-fr{float: right;}
+.forum-searchBg{
+    height: 70px;
+    width: 458px;
+    background: url(../img/forum/forum_searchBg.png) no-repeat center center; 
+    float: right;
+    margin-right: 40px;
+    margin-top: 28px;
+}
+
+.forum-mixBox{height: 335px;background-color: #fff;}
+.forum-question,.forum-reply,.forum-discuss{width: 380px;float: left;height: 335px;}
+.forum-mix-tit{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    margin-top: 17px;
+    display: inline-block;
+    width: 340px;
+}
+.forum-question i{
+    float: left;
+    background-image: url(../img/forum/CssGaga.png);
+    background-position: -391px -26px;
+    width: 20px;
+    height: 21px;
+    margin-right: 6px;
+    margin-top: 17px;
+}
+.forum-reply i{
+    float: left;
+    background-image: url(../img/forum/CssGaga.png);
+    background-position: -362px 0px;
+    width: 27px;
+    height: 21px;
+    margin-right: 6px;
+    margin-top: 17px;
+}
+.forum-discuss i{
+    float: left;
+    background-image: url(../img/forum/CssGaga.png);
+    background-position: -391px -52px;
+    width: 24px;
+    height: 21px;
+    margin-right: 6px;
+    margin-top: 17px;
+}
+.forum-tit-preHr{width: 137px;
+    height: 2px;
+    background-color: #e2a733;
+    margin-top: 12px;
+    display: inline-block;
+    float: left; 
+    border: 1 solid #e0eae0;
+    border-right: none;
+    border-radius: 1px;}
+.forum-tit-afterHr{width: 225px;
+    height: 2px;
+    background-color: #15aae1;
+    margin-top: 12px;
+    display: inline-block;
+    float: left; 
+    border: 1 solid #e0eae0;
+    border-right: none;
+    border-radius: 1px;
+}
+.forum-mixBox ul{
+    display: block;
+    float: left;
+    width: 356px;
+}
+.forum-mixBox ul li{
+    list-style: none;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 2px dashed #cfcfcf;
+    text-indent: 5px;
+}
+.forum-mixBox ul>li:last-child{border:none;}
+.forum-mixBox ul li a:hover{color:#eb862e}
+.forum-mixBox .forum-discuss ul i{
+    background-image: url(../img/forum/CssGaga.png);
+    display: inline-block;
+    float: left;
+    background-position: -391px -78px;
+    margin-top: 12px;
+    margin-right: -5px;
+}
+
+.forum-bot-tit{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    width: 1160px;
+    margin: 0px auto auto auto;
+
+}
+.forum-bot-tit span{
+    width: 179px;
+    height: 95px;
+    line-height: 70px;
+    float: left;
+    display: inline-block;
+    margin: 23px auto 15px 66.25px;
+    background-image:url(../img/forum/CssGaga.png);
+    background-position: -179px 0px;
+    text-align: center;
+    }
+.forum-bot-tit span:hover{
+    background-image:url(../img/forum/CssGaga.png);
+    background-position: 0px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.forum-bot-tit span:first-child{margin-left: 0px;}
+.forum-defNone{display: none;}
+
+
+
+.forum-question{margin-left: 30px;}
+
+.forum-botBox{height: 760px;background-color: #fff;margin-top: 8px;margin-bottom: 25px;}
+.forum-bot-cont table{width: 1160px;margin: 0 auto;}
+.forum-bot-cont table th{
+    text-align: left;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #b5b5b5;
+
+}
+.forum-bot-cont table th:hover{
+    color: #666;   
+}
+.forum-bot-cont table thead tr{
+    height: 54px;
+    background-color: #fbfbfb;
+    border-bottom: 2px solid #e6e6e6;
+}
+.forum-bot-cont table thead i{
+    background-image: url(../img/forum/CssGaga.png);
+    width: 21px;
+    height: 21px;
+    display: inline;
+    float: left;
+    margin-right: 6px;
+    margin-left: 45px;
+}
+.forum-bot-cont table thead i.forum-cat-1{
+    background-position: -391px -26px;
+}
+.forum-bot-cont table thead i.forum-cat-2{
+    background-position: -417px 0px;
+}
+.forum-bot-cont table thead i.forum-cat-3{
+    background-position: -417px -52px;
+}
+.forum-bot-cont table thead i.forum-cat-4{
+    background-position: -417px -78px;
+}
+.forum-bot-cont table thead i.forum-cat-5{
+    background-position: -443px 0px;
+}
+.forum-bot-cont table thead i.forum-cat-6{
+    background-position: -417px -26px;
+}
+.forum-bot-cont table tbody td{
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana;
+    color: #b5b5b5;
+    cursor: pointer;
+    height: 60px;
+}
+.forum-bot-cont tbody tr>td:first-child{
+    color: #333;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    text-align: left;
+    text-indent: 14px;
+}
+.forum-bot-cont tbody tr:nth-child(even){
+    background-color:#fbfbfb;
+}
+/*.forum-page-box{width: 1200px;margin-left: 0 auto;}*/
+.forum-pageBreak {
+margin-top:40px;
+width:400px;
+margin-right:auto;
+margin-left:auto;
+}
+
