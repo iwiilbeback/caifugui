@@ -23,7 +23,7 @@
     ?>
     <div class="aboutHead"></div>
     <div class="pagePosition comWidth">
-        <span><a href="index.php">首页 git test</a> > <a href="#">关于我们</a></span>
+        <span><a href="index.php">首页 git test test2</a> > <a href="#">关于我们</a></span>
     </div>
     <div class="comContent comWidth">
         <div class="comLeftMune f-fl">
